@@ -47,7 +47,7 @@ type function_command =
 
 
 type  instruction=
-  | Arithmetic of arithmetic_logical
-  | Memory of memory_access
-  | Flow of control_flow
+  | Arithmetic of arithmetic_command
+  | Memory of memory_access_command
+  | Flow of control_flow_command
   | FunctionCmd of function_command
